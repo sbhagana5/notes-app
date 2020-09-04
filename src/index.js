@@ -8,7 +8,7 @@ const { error } = require('console')
 const publicPath= path.join(__dirname,'../public')
 
 app.use(express.static(publicPath))
-
+const port = process.env.PORT || 8000
 // const data=JSON.stringify(notes)
     const loadNotes=()=>{
         const databuffer=fs.readFileSync('notes.json')
@@ -43,7 +43,7 @@ app.get('/list',(req,res)=>{
     })     
     });
 
-app.listen(8000,()=>{
-    console.log("port number is ",8000)
+app.listen(port,()=>{
+    console.log("port number is ",port)
 }
 )

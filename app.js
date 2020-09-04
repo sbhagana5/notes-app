@@ -6,7 +6,6 @@ console.log(chalk.red.bold("success!!!!"))
 
 yargs.version('1.1.0')
 //to add command
-const add=
 yargs.command({
     command:"add",
     describe:"to add the note",
@@ -28,7 +27,6 @@ yargs.command({
     handler:(argv)=> notes.addNote(argv.title,argv.body)
 })
 //command to remove
-const remove=
 yargs.command({
     command:"remove",
     describe:"to remove",
@@ -93,8 +91,3 @@ yargs.command(
 })
 yargs.parse();
 
-module.exports={
- add:add,
- remove:remove
-   
-}

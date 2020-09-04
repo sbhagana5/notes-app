@@ -34,8 +34,8 @@ li{
     border-top:2px white solid;
 }
 .book{
-
-    width: 55%;
+    display: inline-block;
+    width: 100%;
     border-bottom: 2px white solid; 
      
 }
